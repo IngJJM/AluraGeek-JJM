@@ -1,0 +1,106 @@
+/*Estilos Css*/
+.rodapie{
+    background: #EAF2FD;
+      
+}
+.menu_contacto{
+    /*width: 85%;*/
+    margin: 0 auto;
+    padding: 16px 10%;
+}
+.menu_contacto__box{
+    width: 40%;
+}
+.main_contenedor{
+    padding-bottom: 16px;
+    
+}
+.main_link{
+    text-decoration: none;
+    color: #464646;
+}
+.contacto{
+    width: 50%;
+}
+.contacto_form{
+    width: 100%;
+}
+.title_contacto{
+    color: #464646;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+}
+.input_nombre{
+    width: 100%;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px solid #C8C8C8;
+    margin-bottom: 8px;
+}
+.input_mensaje{
+    width: 100%;
+    height: 82px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px solid #C8C8C8;
+    margin-bottom: 8px;
+}
+.btn_contacto{
+    color: #FFFFFF;
+    width: 144px;
+    height: 51px;
+    background: #2A7AE4;
+    border-style: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.btn_contacto:hover{
+    background: #5595E9;
+}
+.rodapie_end{
+    height: 70px;
+    padding-top: 32px;
+}
+.desarrollo{
+    color: #464646;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+@media screen and (max-width:1280px){
+    .menu_contacto{
+        padding: 16px 5%;
+    }
+}
+@media screen and (max-width:768px){
+    .menu_contacto{
+        padding: 16px 5%;
+    }
+    .menu_contacto__box{
+        width: 30%;
+    }
+    .contacto{
+        width: 60%;
+    }
+}
+@media screen and (max-width:360px){
+    .menu_contacto__box{
+        width: 100%;
+    }
+    .contacto{
+        width: 100%;
+    }
+}

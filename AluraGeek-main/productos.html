@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerceJJM</title>
+    <link rel="shortcut icon" href="./img/jjm (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/productos_user.css">
+    <link rel="stylesheet" href="./css/rodapie.css">
+    
+</head>
+<body>
+    <header class="cabezera">
+        <section class="cabezera_principal">
+            <div class="logo">
+                <div class="cabezera_componentes">                    
+                    <a href="./index.html">                    
+                        <img src="./img/jjm (2).png" alt="AluraGeek">
+                    </a>
+                    <div class="search_box">
+                        <form class="search_principal">
+                            <input type="search" class="search" placeholder="¿Qué deseas buscar?">
+                            <button type="submit" class="boton_search"><i class="fa fa-search"></i></button> 
+                        </form>        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="productos_contenedor">
+        <section class="productos_all">
+            <div class="productos_title">
+                <h2 class="title_full__productos">Todos los productos</h2>
+                <button class="btn_todo__productos" onclick="location.href='./add_productos.html';">Agregar producto</button>
+            </div>
+            <div class="articulos_descripcion" data-producto>
+                
+                <!--Se inserta las cajas de los productos-->
+                   
+        </section>
+    </main>
+    <footer>
+        <section class="rodapie">
+            <div class="menu_contacto">
+                <div class="menu_contacto__box">
+                    <div class="menu_contacto__contenido">
+                        <a href="./index.html">                    
+                            <img src="./img/jjm (2).png" alt="AluraGeek">
+                        </a>
+                    </div>
+                    <ul class="main">
+                            <li class="main_contenedor"><a class="main_link" href="#">Quienes somos</a></li>
+                            <li class="main_contenedor"><a class="main_link" href="#">Política de privacidad</a></li>
+                            <li class="main_contenedor"><a class="main_link" href="#">Programa de fidelidad</a></li>
+                            <li class="main_contenedor"><a class="main_link" href="#">Nuestras Tiendas</a></li>
+                            <li class="main_contenedor"><a class="main_link" href="#">Quiero ser franquiciado</a></li>
+                            <li class="main_contenedor"><a class="main_link" href="#">Anúncie aquí</a></li>
+                    </ul>
+                
+                </div>
+                
+                <div class="contacto">
+                    <form action="#" class="contacto_form">
+                        <fieldset>
+                            <legend class="title_contacto">Hable con nosotros</legend>
+                            <label for="nombre"></label>
+                            <input class="input_nombre" type="text" placeholder="Nombre" required data-tipo="nombre" pattern="[\s\S]{4,40}">
+                            
+                            <label for="mensaje"></label>
+                            <textarea class="input_mensaje" type="text" placeholder="Escribe tu mensaje" required data-tipo="mensaje" pattern="[\s\S]{5,120}"></textarea>
+                        </fieldset>
+                        <button class="btn_contacto">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+                        
+        </section>
+        <div class="rodapie_end">
+            <h4 class="desarrollo">Desarrollado por Jimena JM 2023</h4>   
+        </div>
+    </footer>
+<script src="./js/search.js"></script>
+<script type="module" src="./js/validacion_rodapie.js"></script>
+<script type="module" src="./js/actualizacion_prod.js"></script>
+</body>
+</html>

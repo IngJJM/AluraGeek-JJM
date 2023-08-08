@@ -1,0 +1,142 @@
+/*Flexbox*/
+/*headers*/
+.cabezera .cabezera_principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo, .btn_login{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo, .cabezera_componentes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabezera .banner_promocional{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.banner_promocional__text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+/*main*/
+.productos .productos_principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.productos .productos_descripcion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.consolas .consolas_principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.consolas .consolas_descripcion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.diversos .diversos_principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.diversos .diversos_descripcion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+/*Footer*/
+.rodapie .menu_contacto{
+    display: flex;
+    justify-content: space-between;
+}
+.menu_contacto .menu_contacto__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.menu_contacto__box .menu_contacto__contenido{
+    display: flex;
+}
+.menu_contacto__box .main{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.menu_contacto .contacto{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+@media screen and (max-width:768px){
+    .menu_contacto .menu_contacto__box {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:360px){
+    .productos_descripcion{
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .productos_descripcion .block_principal {
+        display: flex; 
+        flex-basis: calc(50% - 10px);  
+        justify-content: center;
+        flex-direction: column;
+    }
+    .consolas_descripcion{
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .consolas_descripcion .block_principal {
+        display: flex; 
+        flex-basis: calc(50% - 10px);  
+        justify-content: center;
+        flex-direction: column;
+    }
+    .diversos_descripcion{
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .diversos_descripcion .block_principal {
+        display: flex; 
+        flex-basis: calc(50% - 10px);  
+        justify-content: center;
+        flex-direction: column;
+    }
+    .rodapie .menu_contacto{
+        flex-direction: column;
+    }
+    .menu_contacto .menu_contacto__box{
+        align-items: center;
+    }
+    .menu_contacto__box .main{
+        align-items: center;
+        padding-bottom: 16px;
+    }
+    .menu_contacto__box .menu_contacto__contenido {
+        padding-bottom: 16px;
+    }
+}

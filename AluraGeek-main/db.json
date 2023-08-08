@@ -1,0 +1,24 @@
+{
+  
+
+  "user": [
+      {
+        "nombre": "",
+        "email": "",
+        "password": "",
+        "id": "1"
+      }
+  ],
+  
+  "prod": [
+      {
+        "fileImagen": "",
+        "categoria": "",
+        "nombre_prod": "",
+        "precio_prod": "",
+        "descripcion_prod": "",
+        "id": "1"
+      }
+  ]
+
+}
