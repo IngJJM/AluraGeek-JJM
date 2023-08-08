@@ -1,8 +1,8 @@
-POST https://62faaedbffd7197707f152a5.mockapi.io/user
+POST https://64b9872a79b7c9def6c12834.mockapi.io/api/user
 
 {
    "email": "jimmy-45@hotmail.com",
    "password":"admin"
 }
 ###
-GET https://62faaedbffd7197707f152a5.mockapi.io/user
+GET https://64b9872a79b7c9def6c12834.mockapi.io/api/user
