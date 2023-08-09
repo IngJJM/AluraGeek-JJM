@@ -188,7 +188,7 @@ button {cursor: pointer}
 
   
     .search::placeholder {/* No es un seudoelemento estandar */
-        color:white;
+        color:rgb(17, 17, 17);
            opacity: .6;
            font-size: 10px;
        }
@@ -196,14 +196,21 @@ button {cursor: pointer}
         display: block;
 		width: 0;
 		font-size: 10px;
-		color: #fff;
+		color: #0f0f0f;
 		
+	}
+    .search_principal .search {
+        display: block;
+		padding-left: 2em;
+		padding-right: 1em;
+		width: 540px;
 	}
     .search_box  {
 		width: 200px;
 	}
-    .boton_search{
-        margin-right: 200px;
+    .boton_search:active{
+        width: 200px;
+        
 
     }
     .btn_login{
