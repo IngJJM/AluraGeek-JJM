@@ -14,7 +14,7 @@
     width: 100%;
 }
 :root {
-	--primary-color: #070707;
+	--primary-color: #f8f4f4;
 	--accent-color: #f50000;
 	--main-font: 'roboto';
 	--font-bold: 700;
@@ -29,7 +29,7 @@ button {
 }
 button {cursor: pointer}
 .search::placeholder {/* No es un seudoelemento estandar */
- color:white;
+ color:rgb(17, 17, 17);
 	opacity: .6;
 }
 .search_principal {
@@ -40,6 +40,7 @@ button {cursor: pointer}
 	height: var(--height);
 }
 	.search_principal:hover .search {
+        display: block;
 		padding-left: 2em;
 		padding-right: 1em;
 		width: 540px;
@@ -47,7 +48,7 @@ button {cursor: pointer}
 	.search {
 		width: 0;
 		font-size: 1.2em;
-		color: #fff;
+		color: #0e0d0d;
 		transition: .45s;
 	}
 	.boton_search {
@@ -178,45 +179,33 @@ button {cursor: pointer}
 
 }
 @media screen and (max-width:768px){
-    .logo2{
-        width: 50%;
-        margin-top: -750%;
-    }
+ 
 
     .title_promocional{
         font-size: 22px;
         line-height: 25px;
     }
-    .search_principal {
-        --height: 3em;
-        display: flex;
-        margin-right: 20px;
-        border-radius: var(--height);
-        background-color: var(--primary-color);
-        height: var(--height);
-    }
-    .boton_search{
-        display: block;
-		border-radius: 50%;
-		width: 50px;
-		height: 50px;
-		background-color: var(--accent-color);
-		transition: .3s;
-    }
+
+  
     .search::placeholder {/* No es un seudoelemento estandar */
         color:white;
            opacity: .6;
            font-size: 10px;
        }
        .search {
+        display: block;
 		width: 0;
 		font-size: 10px;
 		color: #fff;
-		transition: .45s;
+		
 	}
-    .search_box:hover .search {
+    .search_box  {
 		width: 200px;
 	}
+    .boton_search{
+        margin-right: 200px;
+
+    }
     .btn_login{
         width: 50px;
         height: 50px;
@@ -229,8 +218,8 @@ button {cursor: pointer}
         height: 28px;
         order: 0;
     }
-   .search_box:hover .search {
-		width: 500px;
+   .search_box{
+		width: 200px;
 	}
     .btn_login{
         order: 1;
