@@ -1,6 +1,13 @@
 
 .formulario_contenedor{
     text-align: center;
+    margin-top: -20%;
+    margin-bottom: 20%;
+}
+.formulario_contenedor1{
+    text-align: center;
+    margin-top: -20%;
+    margin-bottom: 20%;
 }
 .title_login{
     font-family: 'Raleway';
@@ -10,33 +17,23 @@
     line-height: 21px;
     color: #464646;
 }
-.input-container{
-    padding: 16px 0;
+h1{
+    text-align: center;
+    color: #0c0c0c;
+    font-size: 40px;
 }
-.input{
-    padding-left: 10px;
-    width: 413px;
-    height: 63.13px;
-    background: #FFFFFF;
-    border-radius: 4px;
+input[type="email"],
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
     border: none;
-    border-bottom: 1px solid #C8C8C8;
 }
-.btn_login{
-    color: #FFFFFF;
-    width: 423px;
-    height: 62px;
-    background: #2A7AE4;
-    border-style: none;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    
-}
-.btn_login:hover{
-    background: #5595E9;
+.input-container{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    padding: 16px 0;
 }
 .input-login-error{
     display: none;
@@ -48,14 +45,218 @@
     line-height: 19px;
     margin: 15px 0;
 }
-@media screen and (max-width:768px){
-    .input{
-        width: 275px;
-        height: 41px;
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+/*login_inde*/
+.btnlogin {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.btnlogin:before{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.btnlogin:active {
+    color: #000
+}
+
+.btnlogin:active:after {
+    background: transparent;
+}
+
+.btnlogin:hover:before {
+    opacity: 1;
+}
+
+.btnlogin:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/*boton enviar login*/
+.btn_login {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.btn_login:before{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.btn_login:active {
+    color: #000
+}
+
+.btn_login:active:after {
+    background: transparent;
+}
+
+.btn_login:hover:before {
+    opacity: 1;
+}
+
+.btn_login:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/*boton Registrar*/
+.btn_registrar {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.btn_registrar:before{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.btn_registrar:active {
+    color: #000
+}
+
+.btn_registrar:active:after {
+    background: transparent;
+}
+
+.btn_registrar:hover:before {
+    opacity: 1;
+}
+
+.btn_registrar:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+p{
+    text-align: center;
+    
+}
+.link{
+    text-decoration: none;
+      color: #1a2537;
+    font-weight: 600;
+    
+}
+.link:hover{
+     color: cadetblue;
+}
+@media screen and (min-width:768px)
+{
+    .formulario_contenedor{
+        margin: auto;
+        width: 500px;
+        margin-top: 70px;
+        border-radius: 2%;
     }
-    .btn_login{
-        width: 109px;
-        height: 40px;
-        margin: 0 auto;
+    .formulario_contenedor1{
+        margin: auto;
+        width: 500px;
+        border-radius: 2%;
+    }
+}
+@media screen and (max-width:768px)
+{
+    .formulario_contenedor{
+        margin: auto;
+        width: 500px;
+        margin-top: 70px;
+        border-radius: 2%;
+    }
+    .formulario_contenedor1{
+        margin: auto;
+        width: 500px;
+        margin-top: 70px;
+        border-radius: 2%;
     }
 }

@@ -39,7 +39,7 @@
                 </div>
             </section>
         </header>
-        <main class="formulario">
+        <main class="formulario" id="id_formulario">
             <form action="#" class="formulario_contenedor1" data-form>
 
                 <h1>Registrate</h1>
@@ -50,13 +50,13 @@
                     </div>
                     <div class="input-container">
                         <i class="fas fa-envelope icon"></i>
-                        <input type="email" placeholder="Correo Electronico" required data-tipo="email" autocomplete="off">
+                        <input type="email" value="" placeholder="Correo Electronico" required data-tipo="email" autocomplete="off">
                     </div>
                     <div class="input-container">
                         <i class="fas fa-key icon"></i>
-                        <input type="password" placeholder="Contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipo="password">
+                        <input type="password" value="" placeholder="Contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipo="password">
                     </div>
-                    <button type="submit" class="btn_registrar" onclick="limpiar">Enviar</button>
+                    <button type="submit" id="btn_registrar" class="btn_registrar" value="Reiniciar" onclick="funcion_reiniciar()">Enviar</button>
                     <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
                     <p>¿Ya tienes una cuenta?<a class="link" href="login.html">Iniciar Sesion</a>
                     </p>

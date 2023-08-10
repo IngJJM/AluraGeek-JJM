@@ -39,19 +39,19 @@
                 </div>
             </section>
         </header>
-        <main class="formulario">
+        <main class="formulario" id="id_formulario">
             <form action="#" class="formulario_contenedor" data-form>
                 <h1>Login</h1>
                 <div class="contenedor">
                     <div class="input-container">
                         <i class="fas fa-envelope icon"></i>
-                        <input name="email" id="email" class="input" type="email" placeholder="Correo electrónico" required data-tipo="email">
+                        <input name="email" id="email" value="" type="email" placeholder="Correo electrónico" required data-tipo="email" autocomplete="off">
                     </div>
                     <div class="input-container">
                         <i class="fas fa-key icon"></i>
-                        <input name="password" id="password" class="input" type="password" placeholder="Contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipo="password">
+                        <input name="password" id="password" value="" type="password" placeholder="Contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipo="password" autocomplete="off">
                     </div>
-                    <button type="submit" class="btn_login">Enviar</button>
+                    <button type="submit" class="btn_login" onclick="funcion_reiniciar()">Enviar</button>
                     <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
                     <p>¿No tienes una cuenta?
                         <a class="link" href="registrar.html">Registrate
@@ -115,5 +115,6 @@
         <script src="./js/search.js"></script>
         <script type="module" src="./js/validacion_rodapie.js"></script>
         <script type="module" src="./js/login.js"></script>
+        <script type="module" src="./js/resetform.js"></script>
     </body>
 </html>
