@@ -1,5 +1,6 @@
 //Fetch API
 const url = "https://64b9872a79b7c9def6c12834.mockapi.io/api/user";
+const url2 = "https://64b9872a79b7c9def6c12834.mockapi.io/api/prod";
 
 const listaClientes = async () =>{
     const respuesta = await fetch("https://64b9872a79b7c9def6c12834.mockapi.io/api/user");
@@ -9,7 +10,7 @@ const listaProductos = () => fetch("https://64b9872a79b7c9def6c12834.mockapi.io/
 
 const crearCliente = (imagen, categoria, nombre_prod, precio_prod, descripcion_prod) => {
     console.log(imagen, categoria, nombre_prod, precio_prod, descripcion_prod)
-    return fetch((`${url}`),{
+    return fetch((`${url2}`),{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({
@@ -63,7 +64,7 @@ const actualizarProducto = async (imagen, categoria, nombre_prod, precio_prod, d
 
 export const clientServices = {
     listaClientes,
-    eliminarCliente,
+    eliminarCliente
 }
 export const listaServices = {
     eliminarCliente,

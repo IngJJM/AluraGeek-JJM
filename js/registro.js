@@ -7,7 +7,7 @@ formAgregarUsuario.addEventListener("submit", (evento) => {
         const nombre = document.querySelector("[data-tipo=nombre]").value;
         const email = document.querySelector("[data-tipo=email]").value;
         const password = document.querySelector("[data-tipo=password]").value;
-        const registrar=document.getElementById("btn_registrar");
+        
         listaServices
         .crearUsuario(nombre, email, password)
         .then((respuesta) => {

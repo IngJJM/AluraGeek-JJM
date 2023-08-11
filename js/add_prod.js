@@ -25,7 +25,7 @@ function leer(ev) {
 
 /*Submit del formulario de cargar nuevo producto.
 Chequeo que tenga el archivo de foto seleccionado*/
-const formAgregarProducto = document.querySelector(".formulario_contenedor");
+const formAgregarProducto = document.querySelector(".formulario_contenedor0");
 
 formAgregarProducto.addEventListener("submit", (evento) => {
     evento.preventDefault();
