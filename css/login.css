@@ -1,13 +1,13 @@
 
 .formulario_contenedor{
-    text-align: center;
-    margin-top: -20%;
-    margin-bottom: 20%;
+    margin: auto;
+    width: 500px;
+    
 }
 .formulario_contenedor1{
-    text-align: center;
-    margin-top: -20%;
-    margin-bottom: 20%;
+    margin: auto;
+    width: 500px;
+   
 }
 .title_login{
     font-family: 'Raleway';
@@ -18,9 +18,11 @@
     color: #464646;
 }
 h1{
-    text-align: center;
+    
     color: #0c0c0c;
     font-size: 40px;
+    text-align: center;
+    margin-bottom: 10%;
 }
 input[type="email"],
 input[type="text"],
@@ -230,32 +232,36 @@ p{
 }
 .link:hover{
      color: cadetblue;
-}
-@media screen and (min-width:768px)
-{
-    .formulario_contenedor{
-        margin: auto;
-        width: 500px;
-        margin-top: 70px;
-        border-radius: 2%;
-    }
-    .formulario_contenedor1{
-        margin: auto;
-        width: 500px;
-        border-radius: 2%;
-    }
+
 }
 @media screen and (max-width:768px)
 {
     .formulario_contenedor{
+        justify-content: center;
         margin: auto;
-        width: 400px;
+        width: 300px;
         margin-top: 70px;
         border-radius: 2%;
     }
     .formulario_contenedor1{
         margin: auto;
-        width: 500px;
+        width: 300px;
+        margin-top: 70px;
+        border-radius: 2%;
+    }
+}
+@media screen and (max-width:360px)
+{
+    .formulario_contenedor{
+        justify-content: center;
+        margin: auto;
+        width: 300px;
+        margin-top: 70px;
+        border-radius: 2%;
+    }
+    .formulario_contenedor1{
+        margin: auto;
+        width: 300px;
         margin-top: 70px;
         border-radius: 2%;
     }
