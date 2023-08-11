@@ -249,6 +249,11 @@ p{
         margin-top: 70px;
         border-radius: 2%;
     }
+    .btnlogin{
+        display: block;
+        width: 70px;
+        height: 50px;
+    }
     .btnlogin h2{
         visibility: hidden;
     }

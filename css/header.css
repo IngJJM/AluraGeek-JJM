@@ -134,6 +134,7 @@ button {cursor: pointer}
         padding: 12px 5%;
     }
     .banner_promocional{
+        width: auto;
         height: 200px;
         
     }
