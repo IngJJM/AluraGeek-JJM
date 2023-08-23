@@ -31,8 +31,8 @@ listaServices
   .listaProductos()
   .then((data) => {
     
-    data.forEach(({ imagen, categoria, nombre_prod, precio_prod, id }) => {
-      const nuevaLinea = crearNuevaLinea(imagen, categoria, nombre_prod, precio_prod, id);
+    data.forEach(({ imagen, categoria, nombre_prod, precio_prod}) => {
+      const nuevaLinea = crearNuevaLinea(imagen, categoria, nombre_prod, precio_prod);
       div.appendChild(nuevaLinea);
     });
   })
